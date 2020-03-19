@@ -21,7 +21,7 @@ import schedule
 import time
 
 # take input initially and setup driver once
-Country = input('Entry Country Name: ') 
+Country = input('Enter Country Name: ') 
 driver = webdriver.Chrome('path/to/chromedriver')
 
 def extract_data(Country_name):
