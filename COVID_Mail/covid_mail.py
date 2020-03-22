@@ -50,7 +50,7 @@ def extract_data(Country_name):
     data_val = [x.text for x in col_data]
 
     # converting data into a dictionary and then a table
-    data_keys = ['Country', 'Total Cases', 'New Cases', 'Total Deaths', 'New Deaths','Active Cases','Total Recovered','Serious, critical cases','Total Cases per million']
+    data_keys = ['Country', 'Total Cases', 'New Cases', 'Total Deaths', 'New Deaths','Total Recovered','Active Cases','Serious, critical cases','Total Cases per million']
     data_dict = dict(zip(data_keys,data_val))
     
     return data_dict
