@@ -56,6 +56,7 @@ def extract_data(Country_name):
     return data_dict
 
 def send_mail(data_dict):
+    #Less secure apps must be turned on before sending email through gmail
     # setting mail up
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
@@ -125,4 +126,4 @@ schedule.every().day.at("10:00").do(covid_update)
 
 while True:
     schedule.run_pending()
-    time.sleep(1) # wait one minute
+    time.sleep(60) # wait one minute
